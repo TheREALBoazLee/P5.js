@@ -1,18 +1,16 @@
-let image;
+let img;
 
 function loadout(){
-  image = loadimage("wargame.png");
-
+  img = loadImage("wargame.png");
 }
 
 
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(600, 600);
+  background(50, 58, 168);
 }
 
 function draw() {
   background(220);
-  fill(250,250,250);
-  image(200,200);
-
+  img(img,0,0);
 }
