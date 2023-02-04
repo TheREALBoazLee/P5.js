@@ -1,7 +1,9 @@
 let img;
+let millisecond;
+
 
 function loadout(){
-  img = loadImage("wargame.png");
+
 }
 
 
@@ -11,6 +13,10 @@ function setup() {
 }
 
 function draw() {
+  millisecond = millis();
   background(220);
-  img(img,0,0);
+  fill(50, 58, 168);
+  square(20, 200,200);
+  textSize(30);
+  text("Time: " + millisecond, 20, 100);
 }
